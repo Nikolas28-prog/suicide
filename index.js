@@ -41,7 +41,9 @@ client.on("message", function(message) {
 if (command === "suicide") {
   message.reply(`C'est la solution logique`);
 }
-
+if (command == "secret") {
+  message.channel.send("niko c le plus bo");
+}
   if (command === "rebus") {
     
     let random = Math.floor((Math.random() * 9) + 1)
